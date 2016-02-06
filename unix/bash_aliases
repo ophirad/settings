@@ -1,0 +1,18 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# sudo aliases
+alias vim='sudo vim'
+alias updatedb='sudo updatedb'
+alias salt='sudo salt'
+
+# General aliases
+alias diff='colordiff'
+alias ls='ls -lAhF --color=auto'
+tree='tree -C'
+alias cp="cp -v"
+alias mkdir="mkdir -p"
+
+

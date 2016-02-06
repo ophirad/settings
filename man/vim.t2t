@@ -1,0 +1,17 @@
+Unix vim commands
+
+Description
+Unix Vim command for quick reference:
+
+- **__Misc__**  
+| Add text in column | Block visual mode press CTRL+V, select a column ,Edit, esc | 
+| Rearrange file in vim | :%!column -t | 
+| easy-motion  | \\w \\b \\E  | 
+| toggle case  | ~  | 
+| g~3w, g~iw, g~$, gUU/guu  | 3 words, current word, until end of line, all the line  | 
+| zz,zb,zt  | place line in middle bootom or top  | 
+| indent  | << >> ==  | 
+| qq,@q  | record macro, store in q and play using @q [stop record by pressing q]  | 
+| :reg, "1p  | see registers, paste from history | 
+| / CTRL+R, CTRL+W  | search word under cursor | 
+

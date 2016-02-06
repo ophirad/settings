@@ -1,0 +1,23 @@
+git clone https://github.com/eddiegold/tutorials.git adi # adi is the target name (defaults to tutorials)
+
+### Brnaches
+git branch # shows branches
+git branch br_1 # create branch
+git checkout branch # switch branches
+git checkout git_cmds
+
+### Changes
+git reset # same as hg up -C
+git add -A # ot git add filename
+
+### Commits
+git status
+git commit -am "created a defult vimrc file to use in the future on new machines"
+
+
+### Logs
+git log vim --not master
+
+### Push/Pull
+git push https://github.com/eddiegold/tutorials.git vim
+git fetch

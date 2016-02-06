@@ -1,0 +1,44 @@
+#################
+### Functions ###
+extract_file () {
+   if [ -f $1 ] ; then
+       case $1 in
+           *.tar.bz2)   tar xvjf $1    ;;
+           *.tar.gz)    tar xvzf $1    ;;
+           *.bz2)       bunzip2 $1     ;;
+           *.rar)       unrar x $1       ;;
+           *.gz)        gunzip $1      ;;
+           *.tar)       tar xvf $1     ;;
+           *.tbz2)      tar xvjf $1    ;;
+           *.tgz)       tar xvzf $1    ;;
+           *.zip)       unzip $1       ;;
+           *.Z)         uncompress $1  ;;
+           *.7z)        7z x $1        ;;
+           *)           echo "don't know how to extract '$1'..." ;;
+       esac
+   else
+       echo "'$1' is not a valid file!"
+   fi
+}
+export -f extract_file
+
+prepend (){
+  if [[ $# < 2 ]]
+  then
+    echo "usage: param1..param-n prepend-to> param-n+1, must have at least 2 params"
+    return
+  fi
+
+  myarr=("$@")
+  if [[ ! -f ${myarr[$#-1]} ]]
+  then
+    echo "usage: last param must be a file"
+    return
+  fi
+
+  echo `cat $1` `cat $2` > $2
+
+}
+
+export -f prepend
+

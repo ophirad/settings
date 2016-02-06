@@ -1,0 +1,5 @@
+history -s kubectl get endpoints
+history -s kubectl get pods
+history -s kubectl get pods| grep -A4 kube-dns- # show kubedns pod and container
+#history -s 
+#history -s 

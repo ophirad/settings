@@ -1,0 +1,26 @@
+Unix screen commands
+
+Description
+Unix screen command for quick reference:
+
+- **__Creation__**  
+| Start new screen | screen -S <name> | 
+| attach to screen | screen -x <name> | 
+| attach/resume    | screen -r |
+| new screen (in split window)    | <CTRL-A>+c |
+| renaming title   | <CTRL-A>+A |
+| detach   | <CTRL-A>+d |
+
+- **__Spliting screens__**  
+| Vertically  | <CTRL-A>+|  |
+| Horizontally  | <CTRL-A>+S  |
+| Unsplit  | <CTRL-A>+Q or  <CTRL-A>:remove  |
+| Save layout of split screens |  <CTRL-A>+: layout save default |
+| resize    | <CTRL-A>:resize (200X60) |
+
+- **__Navigation__**  
+| Jump to next  | <CTRL-A>+<TAB> |
+| See all terminals and switch in place  | <CTRL-A>+"  |
+| Switch in place  | <CTRL-A>+num , e.g. CTRL-A + 1  |
+| Scrollback  | <CTRL-A>+ESC (use keys), ESC to exit  |
+

@@ -1,0 +1,13 @@
+AWK one-liners
+
+Description
+examples of useful Docker commands for quick review
+
+| Run docker image as permenant container | docker run -dit --name adi1  docker.io/ubuntu  | 
+| exec into a running container  | docker exec -it adi1 bash  | 
+| Use screen (tty) in docker container  | script -c sh -c "screen -S name"  | 
+| Launch nginx container with synched folders  | docker run --name mynginx4 -v /var/www:/usr/share/nginx/html:ro -v /var/nginx/conf:/etc/nginx:ro -P -d nginx  | 
+|   |   | 
+
+
+

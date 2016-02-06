@@ -1,0 +1,5 @@
+history -s  salt '*' test.ping
+history -s  salt '*' pkg.install "bind-utils"
+history -s  salt '*10*' cmd.run "dig SRV default.kubernetes.local @10.0.0.10"
+history -s  salt '*10*' cmd.run "dig monitoring-influxdb.default.kubernetes.local @10.0.0.10"
+

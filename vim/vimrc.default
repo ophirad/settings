@@ -1,0 +1,55 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'https://github.com/Lokaltog/vim-easymotion'
+Plugin 'https://github.com/scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+call vundle#end()            " required
+
+" Direct vundle installs
+
+" JS linting
+set runtimepath+=~/.vim/bundle/jshint2.vim/
+nnoremap <silent>HH :JSHint<CR>
+
+filetype plugin indent on    " required
+" Put your non-Plugin stuff after this line
+
+colorscheme pablo "readable colorscheme
+
+"highlighing selected row
+set cursorline
+hi CursorLine cterm=none ctermbg=darkred ctermfg=white
+syntax on  "uncomment if you want just an underlined selected line
+
+""" Tabs and indents
+set tabstop=2  " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
+set expandtab       " tabs are spaces
+set shiftwidth=2    " indent are now 2 characters wide
+set smartindent     " for code 
+
+""" UI Config
+set showcmd   " show command in bottom bar
+set wildmenu            " visual autocomplete for command menu
+set showmatch           " highlight matching [{()}]
+set number "set row numbers
+
+""" Searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+" vim plugins - NerdTree does not start by default
+"autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+""" Misc
+set paste " prevents indenting when pasting into vim
+set backspace=indent,eol,start
+map Q :qa<CR> # exit without save

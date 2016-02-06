@@ -1,0 +1,18 @@
+Unix one-liners
+
+Description
+examples of useful unix commands for quick review
+| prepend | printf | truncate | awk-vs-xargs | diff-dir |
+| loops | screen | 
+
+- **__prepend__**
+| prepend | text to top of file insead of bottom. | 
+| (tac uri.rb; echo "%%%%%%%%%%")| tac - | (tac file1; tac file2)| tac - |
+
+- **__truncate__**
+
+- **__exist status nd other flags__**
+| echo $? (exist status) | !! (last command)  |   |   |
+
+- **__txt2tags__**
+| txt2tags  | txt2tags -t man ww.t2t;clear;man ./ww.man |

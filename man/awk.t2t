@@ -1,0 +1,9 @@
+AWK one-liners
+
+Description
+examples of useful AWK commands for quick review
+
+| xargsl like run command | sudo docker ps -a -f STATUS=exited| awk -F' ' 'NR>1{cmd="sudo docker rm " $1; system(cmd)}' | 
+
+
+
