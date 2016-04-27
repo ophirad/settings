@@ -1,5 +1,5 @@
 This script is used to initialize new yum based VMs to contain tools of your choice.
-Can be done via salt/chef or a preset image.  However, when using many tmp VMs (or building an omage VM) this is a simpler, shorter and handier option.
+Can be done via salt/chef or a preset image.  However, when using many tmp VMs (or building an image VM) this is a simpler, shorter and handier option.
 
 Auto-run:
 # install git, clone the git repo and run the bootstrap script
